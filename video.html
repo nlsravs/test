@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Video Display</title>
+</head>
+
+<body>
+<div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-black">projects</button>
+     <button class="w3-button w3-white" onclick="openHtmlPage('index.html')"><i class="fa fa-diamond w3-margin-right"></i>Home</button>
+
+<button class="w3-button w3-white w3-hide-small" onclick="openHtmlPage('portifolio.html')"><i class="fa fa-photo w3-margin-right"></i>Resume</button>
+
+    </div>
+<h1>projects</h1>
+  <h2>Milatronics</h2>
+
+  <video width="640" height="360" controls>
+    <!-- Replace 'your-video.mp4' with the actual filename and path of your video -->
+    <source src="C:\Users\DELL\Videos\Captures\W3.CSS Template - Personal - Microsoft​ Edge 2023-11-04 20-46-32.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <h2>IOT "TRIFI"</h2>
+
+  <video width="640" height="360" controls>
+    <!-- Replace 'your-video.mp4' with the actual filename and path of your video -->
+    <source src="C:\Users\DELL\Downloads\WhatsApp Video 2023-12-30 at 12.36.07 AM.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+function openDesignPage() {
+    // Replace 'design.html' with the URL of the page you want to open
+    window.open('gpt1.html', '_blank');
+	 
+}
+ 
+	function openHtmlPage(url) {
+        window.location.href = url;
+    }
+</script>
+</body>
+</html>
